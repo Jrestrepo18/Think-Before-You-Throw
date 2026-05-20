@@ -6,11 +6,10 @@ export function useScrollReveal() {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('scroll-active');
-        } else {
-          entry.target.classList.remove('scroll-active');
+          observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.05 });
+    }, { threshold: 0.02 });
 
     const hiddenElements = document.querySelectorAll('.scroll-reveal');
     hiddenElements.forEach((el) => observer.observe(el));

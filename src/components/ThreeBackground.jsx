@@ -245,7 +245,7 @@ export default memo(function ThreeBackground({ mountRef, threeRefs }) {
 
       const animate = () => {
         if (camera.position.z > 3.5) {
-          camera.position.z += (3.5 - camera.position.z) * 0.05;
+          camera.position.z += (3.5 - camera.position.z) * 0.08;
         }
 
         baseEarthRotation += 0.0005;
@@ -257,8 +257,8 @@ export default memo(function ThreeBackground({ mountRef, threeRefs }) {
         animateParticles(lightnings, 0.006);
         animateParticles(recycles, 0.005);
 
-        currentRotationY += (targetRotationY * 0.3 - currentRotationY) * 0.05;
-        currentRotationX += (targetRotationX * 0.2 - currentRotationX) * 0.05;
+        currentRotationY += (targetRotationY * 0.3 - currentRotationY) * 0.08;
+        currentRotationX += (targetRotationX * 0.2 - currentRotationX) * 0.08;
         
         sceneWrapper.rotation.y = currentRotationY;
         sceneWrapper.rotation.x = currentRotationX;
@@ -269,7 +269,7 @@ export default memo(function ThreeBackground({ mountRef, threeRefs }) {
           atmosphereMesh.scale.set(scale, scale, scale);
           
           if (mountRef.current) {
-            mountRef.current.style.opacity = Math.max(0, 1 - (cachedScrollY / (cachedHeight * 2.5)));
+            mountRef.current.style.opacity = Math.max(0, 1 - (cachedScrollY / (cachedHeight * 1.8)));
           }
         }
 

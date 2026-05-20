@@ -69,9 +69,9 @@ export default function LetterSection() {
         An important message to our university community.
       </p>
 
-      <div className="scroll-reveal reveal-flip relative z-10 delay-200 group max-w-4xl w-full bg-slate-800/60 border border-slate-600/50 p-8 md:p-16 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-md text-left transition-all duration-500 hover:shadow-[0_0_60px_rgba(74,222,128,0.15)] hover:border-green-400/50 min-h-[800px]">
-        <div className="absolute -top-4 -left-4 w-8 h-8 border-t-2 border-l-2 border-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-        <div className="absolute -bottom-4 -right-4 w-8 h-8 border-b-2 border-r-2 border-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <div className="scroll-reveal reveal-flip relative z-10 delay-200 group max-w-4xl w-full bg-slate-800/60 border border-slate-600/50 p-8 md:p-16 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-sm text-left transition-all duration-300 hover:shadow-[0_0_60px_rgba(74,222,128,0.15)] hover:border-green-400/50 min-h-[800px]">
+        <div className="absolute -top-4 -left-4 w-8 h-8 border-t-2 border-l-2 border-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+        <div className="absolute -bottom-4 -right-4 w-8 h-8 border-b-2 border-r-2 border-green-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
         <p className="text-lg md:text-xl text-slate-300 font-light leading-relaxed mb-6 transition-colors duration-300 group-hover:text-white min-h-[28px]">
           <TypewriterText text="Dear Students and Teachers," speed={5} delay={300} />

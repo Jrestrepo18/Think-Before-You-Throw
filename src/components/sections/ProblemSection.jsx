@@ -4,11 +4,11 @@ import { AlertTriangle, Recycle, Waves } from 'lucide-react';
 const ProblemBlock = ({ children, delay = '', className = '', icon: Icon, iconColor = 'text-slate-400', isGroup = false }) => (
   <div className={`${isGroup ? 'group' : ''} relative w-full min-h-[100vh] flex flex-col items-center justify-center max-w-5xl mx-auto px-4 scroll-reveal ${delay}`}>
     {Icon && (
-      <div className={`relative z-10 mb-12 p-5 rounded-full bg-slate-800/50 border border-slate-700 backdrop-blur-sm transition-all duration-1000 opacity-0 scale-50 group-[.scroll-active]:opacity-100 group-[.scroll-active]:scale-100 ${iconColor}`}>
+      <div className={`relative z-10 mb-12 p-5 rounded-full bg-slate-800/50 border border-slate-700 backdrop-blur-sm transition-all duration-500 opacity-0 scale-75 group-[.scroll-active]:opacity-100 group-[.scroll-active]:scale-100 ${iconColor}`}>
         <Icon className="w-14 h-14 group-[.scroll-active]:animate-pulse-glow" />
       </div>
     )}
-    <div className={`relative z-10 inline-block text-center transition-all duration-1000 opacity-0 translate-y-10 group-[.scroll-active]:opacity-100 group-[.scroll-active]:translate-y-0 ${className}`}>
+    <div className={`relative z-10 inline-block text-center transition-all duration-500 opacity-0 translate-y-4 group-[.scroll-active]:opacity-100 group-[.scroll-active]:translate-y-0 ${className}`}>
       {children}
     </div>
   </div>
@@ -24,7 +24,7 @@ export default function ProblemSection() {
       {/* Phrase 1 */}
       <ProblemBlock isGroup icon={AlertTriangle} iconColor="text-orange-500">
         {/* Fondo de luz naranja - Sin retraso para que aparezca exactamente con la frase */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] max-w-[600px] h-[150%] max-h-[600px] bg-orange-600/15 blur-[100px] rounded-full pointer-events-none z-0 opacity-0 transition-opacity duration-1000 group-[.scroll-active]:opacity-100"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] max-w-[600px] h-[150%] max-h-[600px] bg-orange-600/15 blur-[100px] rounded-full pointer-events-none z-0 opacity-0 transition-opacity duration-500 group-[.scroll-active]:opacity-100"></div>
 
         <h3 className="relative z-10 text-3xl md:text-5xl lg:text-6xl font-bold font-heading leading-tight text-slate-200">
           We do not use the bins correctly.<br />
@@ -36,7 +36,7 @@ export default function ProblemSection() {
       {/* Phrase 2 - Middle Phrase with Light Effect */}
       <ProblemBlock isGroup delay="delay-100" icon={Recycle} iconColor="text-green-400">
         {/* Ambient Glow Verde - centrado exactamente detrás del texto */}
-        <div className="absolute inset-0 m-auto w-[600px] h-[600px] bg-green-500/30 blur-[150px] rounded-full pointer-events-none z-0 opacity-0 transition-opacity duration-1000 group-[.scroll-active]:opacity-100"></div>
+        <div className="absolute inset-0 m-auto w-[600px] h-[600px] bg-green-500/30 blur-[150px] rounded-full pointer-events-none z-0 opacity-0 transition-opacity duration-500 group-[.scroll-active]:opacity-100"></div>
         
         <h3 className="relative z-10 text-3xl md:text-5xl lg:text-6xl font-bold font-heading leading-tight text-center">
           <span className="block text-slate-200">
@@ -52,7 +52,7 @@ export default function ProblemSection() {
       {/* Phrase 3 */}
       <ProblemBlock isGroup delay="delay-200" icon={Waves} iconColor="text-blue-400">
         {/* Fondo de luz azul/verde - Sin retraso */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] max-w-[600px] h-[150%] max-h-[600px] bg-emerald-600/15 blur-[100px] rounded-full pointer-events-none z-0 opacity-0 transition-opacity duration-1000 group-[.scroll-active]:opacity-100"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] max-w-[600px] h-[150%] max-h-[600px] bg-emerald-600/15 blur-[100px] rounded-full pointer-events-none z-0 opacity-0 transition-opacity duration-500 group-[.scroll-active]:opacity-100"></div>
 
         <h3 className="relative z-10 text-3xl md:text-5xl lg:text-6xl font-bold font-heading leading-tight text-slate-300 mb-12">
           In the future, all our garbage will go<br />

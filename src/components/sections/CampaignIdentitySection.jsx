@@ -15,8 +15,7 @@ export default function CampaignIdentitySection() {
         {/* ✨ NUEVO LOGO CUSTOM SVG ✨ */}
         <div className="scroll-reveal reveal-zoom delay-100 w-full md:w-1/3 flex justify-center relative">
           <div className="relative w-64 h-64 flex items-center justify-center group overflow-visible">
-            <div className="absolute inset-0 bg-green-500/20 rounded-full animate-pulse filter blur-2xl"></div>
-            <div className="w-56 h-56 transition-transform duration-700 group-hover:scale-105 group-hover:rotate-3 drop-shadow-[0_0_40px_rgba(74,222,128,0.4)]">
+            <div className="w-56 h-56 transition-transform duration-300 group-hover:scale-105 group-hover:rotate-3 drop-shadow-[0_0_40px_rgba(74,222,128,0.4)]">
               <EcoLogo />
             </div>
           </div>

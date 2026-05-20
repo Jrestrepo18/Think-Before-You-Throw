@@ -34,11 +34,11 @@ export default function SolutionGuideSection() {
         <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-green-900 via-green-400 to-transparent -translate-x-1/2 opacity-20"></div>
         
         <div className="flex flex-col md:flex-row items-center gap-12 group relative">
-          <div className="scroll-reveal reveal-left w-full md:w-1/2 overflow-hidden rounded-3xl shadow-2xl relative border-4 border-slate-800 group-hover:border-green-400/50 transition-all duration-500">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?q=80&w=1080&auto=format&fit=crop" alt="Recycling colors" className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-105" />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <div className="scroll-reveal reveal-left w-full md:w-1/2 overflow-hidden rounded-3xl shadow-2xl relative border-4 border-slate-800 group-hover:border-green-400/50 transition-all duration-300">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1605600659873-d808a13e4d2a?q=80&w=1080&auto=format&fit=crop" alt="Recycling colors" className="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
-          <div className="scroll-reveal reveal-right w-full md:w-1/2 bg-slate-800/40 backdrop-blur-xl p-8 rounded-3xl border border-slate-700/50 shadow-xl group-hover:shadow-2xl transition-all duration-500">
+          <div className="scroll-reveal reveal-right w-full md:w-1/2 bg-slate-800/40 backdrop-blur-sm p-8 rounded-3xl border border-slate-700/50 shadow-xl group-hover:shadow-2xl transition-all duration-300">
             <div className="flex items-center gap-4 mb-4">
               <span className="w-12 h-12 bg-green-500/20 text-green-400 border border-green-500/30 rounded-full flex items-center justify-center font-black text-xl group-hover:bg-green-500 group-hover:text-slate-900 transition-colors duration-300 shadow-sm">1</span>
               <h3 className="text-3xl font-bold font-heading text-white group-hover:text-green-400 transition-colors duration-300">Master The Color Code</h3>
@@ -262,10 +262,10 @@ export default function SolutionGuideSection() {
         </div>
 
         <div className="flex flex-col md:flex-row-reverse items-center gap-12 group relative">
-          <div className="scroll-reveal reveal-right w-full md:w-1/2 overflow-hidden rounded-3xl shadow-2xl border-4 border-slate-800 group-hover:border-blue-400/50 transition-all duration-500">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1528323273322-d81458248d40?q=80&w=1080&auto=format&fit=crop" alt="Clean plastic bottle" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div className="scroll-reveal reveal-right w-full md:w-1/2 overflow-hidden rounded-3xl shadow-2xl border-4 border-slate-800 group-hover:border-blue-400/50 transition-all duration-300">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1528323273322-d81458248d40?q=80&w=1080&auto=format&fit=crop" alt="Clean plastic bottle" className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105" />
           </div>
-          <div className="scroll-reveal reveal-left w-full md:w-1/2 bg-slate-800/40 backdrop-blur-xl p-8 rounded-3xl border border-slate-700/50 shadow-xl group-hover:shadow-2xl transition-all duration-500">
+          <div className="scroll-reveal reveal-left w-full md:w-1/2 bg-slate-800/40 backdrop-blur-sm p-8 rounded-3xl border border-slate-700/50 shadow-xl group-hover:shadow-2xl transition-all duration-300">
             <div className="flex items-center gap-4 mb-4">
               <span className="w-12 h-12 bg-blue-500/20 text-blue-400 border border-blue-500/30 rounded-full flex items-center justify-center font-black text-xl group-hover:bg-blue-500 group-hover:text-white transition-colors duration-300 shadow-sm">2</span>
               <h3 className="text-3xl font-bold font-heading text-white group-hover:text-blue-400 transition-colors duration-300">Clean Before You Drop</h3>
@@ -286,10 +286,10 @@ export default function SolutionGuideSection() {
         </div>
         
         <div className="flex flex-col md:flex-row items-center gap-12 group relative">
-          <div className="scroll-reveal reveal-left w-full md:w-1/2 overflow-hidden rounded-3xl shadow-2xl border-4 border-slate-800 group-hover:border-green-400/50 transition-all duration-500">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807?q=80&w=1080&auto=format&fit=crop" alt="Student reading sign" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+          <div className="scroll-reveal reveal-left w-full md:w-1/2 overflow-hidden rounded-3xl shadow-2xl border-4 border-slate-800 group-hover:border-green-400/50 transition-all duration-300">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807?q=80&w=1080&auto=format&fit=crop" alt="Student reading sign" className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105" />
           </div>
-          <div className="scroll-reveal reveal-right w-full md:w-1/2 bg-slate-800/40 backdrop-blur-xl p-8 rounded-3xl border border-slate-700/50 shadow-xl group-hover:shadow-2xl transition-all duration-500">
+          <div className="scroll-reveal reveal-right w-full md:w-1/2 bg-slate-800/40 backdrop-blur-sm p-8 rounded-3xl border border-slate-700/50 shadow-xl group-hover:shadow-2xl transition-all duration-300">
             <div className="flex items-center gap-4 mb-4">
               <span className="w-12 h-12 bg-green-500/20 text-green-400 border border-green-500/30 rounded-full flex items-center justify-center font-black text-xl group-hover:bg-green-500 group-hover:text-slate-900 transition-colors duration-300 shadow-sm">3</span>
               <h3 className="text-3xl font-bold font-heading text-white group-hover:text-green-400 transition-colors duration-300">Stop and Read</h3>
