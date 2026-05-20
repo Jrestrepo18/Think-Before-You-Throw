@@ -1,6 +1,6 @@
 import React, { useEffect, memo } from 'react';
 
-export default memo(function ThreeBackground({ mountRef, threeRefs }) {
+export default memo(function ThreeBackground({ mountRef, threeRefs, onLoaded }) {
   useEffect(() => {
     let animationFrameId;
     let renderer;
@@ -34,7 +34,12 @@ export default memo(function ThreeBackground({ mountRef, threeRefs }) {
       sceneWrapper.add(earthGroup);
       threeRefs.current.earthGroup = sceneWrapper; 
 
-      const textureLoader = new THREE.TextureLoader();
+      const manager = new THREE.LoadingManager();
+      manager.onLoad = function () {
+        if (onLoaded) onLoaded();
+      };
+
+      const textureLoader = new THREE.TextureLoader(manager);
       textureLoader.setCrossOrigin('Anonymous');
 
       // Reduced sphere segments from 64 to 32
