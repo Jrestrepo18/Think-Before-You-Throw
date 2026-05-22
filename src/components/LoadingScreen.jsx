@@ -70,7 +70,7 @@ export default function LoadingScreen({ isLoading }) {
           
           {/* Top Logo (Colored, filling up) */}
           <div 
-            className="absolute inset-0 transition-[clip-path] duration-75 ease-linear drop-shadow-[0_0_30px_rgba(74,222,128,0.5)]"
+            className="absolute inset-0 transition-[clip-path] duration-75 ease-linear"
             style={{ 
               clipPath: `inset(${100 - progress}% 0 0 0)` 
             }}

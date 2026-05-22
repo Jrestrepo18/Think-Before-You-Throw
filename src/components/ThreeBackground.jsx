@@ -1,6 +1,12 @@
-import React, { useEffect, memo } from 'react';
+import React, { useEffect, useRef, memo } from 'react';
 
-export default memo(function ThreeBackground({ mountRef, threeRefs, onLoaded }) {
+export default memo(function ThreeBackground({ mountRef, threeRefs, onLoaded, isAppLoading }) {
+  const isAppLoadingRef = useRef(isAppLoading);
+  
+  useEffect(() => {
+    isAppLoadingRef.current = isAppLoading;
+  }, [isAppLoading]);
+
   useEffect(() => {
     let animationFrameId;
     let renderer;
@@ -249,8 +255,12 @@ export default memo(function ThreeBackground({ mountRef, threeRefs, onLoaded }) 
       window.addEventListener('scroll', handleScroll, { passive: true });
 
       const animate = () => {
-        if (camera.position.z > 3.5) {
-          camera.position.z += (3.5 - camera.position.z) * 0.08;
+        if (!isAppLoadingRef.current) {
+          if (camera.position.z > 3.5) {
+            camera.position.z += (3.5 - camera.position.z) * 0.03; // cinematic slow zoom
+          }
+        } else {
+          camera.position.z = 15; // keep far away initially
         }
 
         baseEarthRotation += 0.0005;

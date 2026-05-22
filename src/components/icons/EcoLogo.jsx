@@ -10,10 +10,6 @@ const EcoLogo = () => (
         <stop offset="0%" stopColor="#16a34a" />
         <stop offset="100%" stopColor="#4ade80" />
       </linearGradient>
-      <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur stdDeviation="4" result="blur" />
-        <feComposite in="SourceGraphic" in2="blur" operator="over" />
-      </filter>
     </defs>
     
     <circle cx="100" cy="95" r="55" fill="url(#globe-grad)" />
@@ -21,7 +17,7 @@ const EcoLogo = () => (
     <ellipse cx="100" cy="95" rx="25" ry="55" fill="none" stroke="rgba(255,255,255,0.2)" strokeWidth="1.5" />
     <line x1="45" y1="95" x2="155" y2="95" stroke="rgba(255,255,255,0.2)" strokeWidth="1.5" />
 
-    <path d="M 100 175 C 30 175 10 95 40 45 C 55 75 75 95 100 95 C 125 95 155 70 170 30 C 180 85 165 175 100 175 Z" fill="url(#leaf-grad)" filter="url(#soft-glow)" opacity="0.95"/>
+    <path d="M 100 175 C 30 175 10 95 40 45 C 55 75 75 95 100 95 C 125 95 155 70 170 30 C 180 85 165 175 100 175 Z" fill="url(#leaf-grad)" opacity="0.95"/>
     
     <path d="M 40 45 Q 85 90 100 95" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" opacity="0.5"/>
     <path d="M 170 30 Q 135 75 100 95" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" opacity="0.5"/>

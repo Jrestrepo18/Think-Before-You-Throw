@@ -44,7 +44,7 @@ function App() {
     <div className="w-full min-h-screen bg-slate-950 font-body text-slate-200 overflow-x-hidden selection:bg-green-500/30 selection:text-green-200">
       <LoadingScreen isLoading={isLoading} />
       
-      <ThreeBackground mountRef={mountRef} threeRefs={threeRefs} onLoaded={handleThreeLoaded} />
+      <ThreeBackground mountRef={mountRef} threeRefs={threeRefs} onLoaded={handleThreeLoaded} isAppLoading={isLoading} />
       
       <main className="relative z-10 w-full overflow-hidden">
         <HeroSection />
