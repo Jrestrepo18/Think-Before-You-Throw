@@ -1,4 +1,5 @@
 import React from 'react';
+import { ChevronDown } from 'lucide-react';
 import EcoLogo from '../icons/EcoLogo';
 
 export default function CampaignIdentitySection() {
@@ -39,6 +40,12 @@ export default function CampaignIdentitySection() {
           </p>
         </div>
       </div>
+
+      <div className="scroll-reveal delay-500 mt-20 flex flex-col items-center animate-bounce text-white/30">
+        <span className="text-[10px] uppercase tracking-[0.3em] mb-2 font-heading">Continue</span>
+        <ChevronDown className="w-5 h-5" />
+      </div>
+
     </section>
   );
 }
