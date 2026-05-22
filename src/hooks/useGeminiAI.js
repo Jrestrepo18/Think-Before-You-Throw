@@ -23,7 +23,7 @@ export function useGeminiAI() {
   };
 
   const callGeminiBase = async (payload, retries = 5, delay = 1000) => {
-    const apiKey = "AIzaSyD0bIEy6aliAgeDldeaDpi6w_j-c0CZOGA"; 
+    const apiKey = "AIzaSyBr3Hj2oRK7cmzJsapHoSibBU0moNdgSFA"; 
     
     const modelName = apiKey ? "gemini-2.5-flash" : "gemini-2.5-flash-preview-09-2025";
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`;
